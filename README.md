@@ -11,7 +11,7 @@ Use: `dist(array_input, origin, dist_type)`
 Where:
 
 * array_input: numpy binary array representing image (1 - foreground; 0 - background)
-* origin: tuple (x,y,(z)) representing coordinates used as starting point for transformation
+* origin: tuple (x,y,(z)) representing coordinates used as starting point for transformation ***
 * dist_type: distance metric used
 	* "city" = cityblock
 	* "chess" = chessboard
@@ -28,3 +28,6 @@ Other functions from this module (see corresponding docstrings):
 * optim(): used for restricting computation to the minimum region containing a list of points
 
 For more information see docstrings for each function
+
+
+*** DISCLAIMER: note that (x,y) coordinates refer to (row, column) of the array and (x,y,z) refer to (depth, row, column)
